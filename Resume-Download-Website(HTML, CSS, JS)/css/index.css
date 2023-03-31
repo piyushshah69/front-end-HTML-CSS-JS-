@@ -1,0 +1,249 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFCBEA;
+}
+
+/* Typography, buttons and lines */
+
+h1{
+    font-size: 35px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: 15px;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+h4{
+    font-size: 13px;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+p, li{
+    font-size: 12px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgb(98, 98, 98);
+}
+
+.intro-section p,
+.intro-section li {
+    font-size: 18px;
+}
+
+button{
+    color: white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    background-color: #E5309D;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 48px;
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+}
+
+.section-heading::after{
+    content: " ";
+    height: 2px;
+    width: 500px;
+    position: absolute;
+    background: rgb(239, 239, 239);
+    top: 50%;
+    margin: auto 12px;
+}
+
+.section-heading{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Main Container  */
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+}
+
+/* Intro Section  */
+
+.intro-section{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.intro-section p{
+    line-height: 25px;
+}
+
+.intro-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+/* CV Section  */
+
+.cv-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 620px;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: white;
+    padding: 42px;
+}
+
+/* Profile Section  */
+
+.cv-section .cv .profile {
+    align-items: center;
+    display: flex;
+    gap: 22px;
+}
+
+.cv-section .cv .title,
+span {
+    color: blue;
+}
+
+.cv-section .cv .profile img {
+    object-fit: cover;
+    width: 120px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.cv-section .cv .profile .name-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cv-section .cv .profile .name-contact a {
+    color: black;
+}
+
+/* About and Skills section  */
+
+.about-skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-skills .about {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 55%;
+}
+
+.about-skills .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 40%;
+}
+
+.about-skills .skills .skills-list {
+    display: flex;
+    gap: 40px;
+}
+
+.about-skills .skills .skills-list ul li {
+    list-style-type: none;
+}
+
+/* Education  */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-details .year {
+    width: 10%;
+}
+
+.section-details .location {
+    width: 18%;
+}
+
+.section-details div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Experience  */
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.experience .section-details div .company-name {
+    color: rgb(98, 98, 98);
+}
+
+/* Projects  */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.projects .section-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media print{
+    .intro-section{
+        display: none;
+    }
+
+    .download-btn{
+        display: none;
+    }
+}
+

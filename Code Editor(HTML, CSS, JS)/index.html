@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <span class="logo">Code<span>editor</span></span>
+        <div class="nav-items">
+            <p class="nav-items-active">Editor</p>
+            <p>Source</p>
+            <p>Contact</p>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="html-section lang-section">
+            <div class="lang-heading">
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <h2>HTML</h2>
+            </div>
+        <textarea id="html-code" onkeyup="edit()" placeholder="<!-- Write HTML Code Here -->"></textarea>
+        </div>
+        <div class="css-section lang-section">
+            <div class="lang-heading">
+                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                <h2>CSS</h2>
+            </div>
+        <textarea id="css-code"  onkeyup="edit()" placeholder="/* Write CSS Code Here */"></textarea>
+        </div>
+        <div class="js-section lang-section">
+            <div class="lang-heading">
+                <i class="fa-brands fa-js-square fa-xl"></i>
+                <h2>JS</h2>
+            </div>
+        <textarea id="js-code" onkeyup="edit()" placeholder="// Write JS Code Here" spellcheck="false"></textarea>
+        </div>
+    </div>
+    <h1 class="output">Output</h1>
+    <iframe id="iframe"></iframe>
+</body>
+<script src="https://kit.fontawesome.com/382d78f3ef.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>

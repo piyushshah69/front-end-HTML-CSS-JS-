@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --themeColor: rgb(255, 0, 255);
+    --borderColor: rgb(47, 47, 47);
+}
+
+body{
+    background-color: black;
+    color: white;
+    padding: 0 2.5rem;
+}
+
+nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    font-size: 1.2rem;
+    border-bottom: .5px solid var(--borderColor);
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+}
+
+.logo{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.logo span{
+    color: var(--themeColor);
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.nav-items p{
+    padding: 1rem 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* border-top: 3px solid black;
+    border-bottom: 3px solid black; */
+    transition: .2s ease;
+}
+
+.nav-items p:hover, .nav-items-active{
+    color: var(--themeColor);
+    /* border-bottom: 3px solid var(--themeColor); */
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8rem 0 3rem;
+    gap: 1rem;
+}
+
+.lang-section{
+    width: 32%;
+    aspect-ratio: 1 / 1;
+    border: .5px solid var(--themeColor);
+    border-radius: 5px;
+    position: relative;
+    min-width: 300px;
+}
+
+.lang-heading{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border-bottom: .5px solid var(--themeColor);
+}
+
+.lang-heading h2{
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+}
+
+
+.lang-logo {
+    width: 2rem;
+}
+
+textarea{
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+    padding: .5rem;
+    color: white;
+    background-color: black;
+    resize: none;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    top: 10%;
+    border-radius: 0 0 4px 4px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.output{
+    text-align: center;
+    background-color: var(--themeColor);
+    padding: .5rem 0;
+    font-weight: 400;
+}
+
+iframe{
+    width: 100%;
+    border: none;
+    background-color: white;
+}
